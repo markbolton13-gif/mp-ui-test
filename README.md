@@ -1,4 +1,4 @@
-# Typography Test — Outfit (px + Container Queries, with 1024px tablet)
+# Typography Test — Outfit (px + Container Queries)
 
 **What you get**
 - Outfit font via Google Fonts
