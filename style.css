@@ -3,7 +3,7 @@
   --body-lg:18px; --body:16px; --body-sm:14px; --caption:12px;
   --space-1:8px; --space-2:12px; --space-3:16px; --space-4:24px; --space-5:32px;
   --radius:12px;
-  --ink:#0f1720; --muted:#5b6470; --canvas:#f7f8fa; --card:#ffffff; --stroke:#d7dbe1; --accent:#2b80ff;
+  --ink:#0f1720; --muted:#5b6470; --canvas:#f7f8fa; --card:#ffffff; --stroke:#d7dbe1;
 }
 *{box-sizing:border-box} html,body{margin:0;padding:0}
 body{font-family:'Outfit',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-weight:400;color:var(--ink);background:var(--canvas);line-height:1.5}
@@ -39,7 +39,7 @@ body{font-family:'Outfit',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Aria
 .w-960{max-width:960px;height:40px}
 .container-qs{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);container-type:inline-size}
 .demo-block{border:1px solid var(--stroke);border-radius:10px;padding:var(--space-4);background:var(--card)}
-@container (max-width: 800px){.container-qs{grid-template-columns:repeat(2,1fr)}}
-@container (max-width: 520px){.container-qs{grid-template-columns:1fr}}
+@container (max-width: 1024px){.container-qs{grid-template-columns:repeat(2,1fr)}} /* tablet */
+@container (max-width: 800px){.container-qs{grid-template-columns:repeat(2,1fr)}}   /* tight squeeze */
+@container (max-width: 520px){.container-qs{grid-template-columns:1fr}}            /* mobile */
 @container (max-width: 520px){.h1,h1{font-size:48px}.h2,h2{font-size:36px}.h3,h3{font-size:28px}}
-@media print{.page-header,.page-footer{display:none}.wrap{padding:0}}
